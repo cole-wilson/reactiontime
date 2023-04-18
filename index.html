@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Reaction Timer</title>
+		<style>
+* {user-select: none;}
+body {
+	position: fixed;
+	top: 0;
+	background: blue;
+	color: white;
+	font-family: monospace;
+	margin: 0px;
+	cursor: pointer;
+	width: 100vw;
+	height: 100vh;
+
+}
+header {
+	cursor: revert;
+	background: white;
+	color: black;
+	padding: 10px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+div {
+	width: 100vw;
+	display: block;
+	text-align: center;
+	margin-top: 45vh;
+}
+h2 {font-size: 3em;margin:10px}
+footer {
+	text-align: center;
+	color: white;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	font-size: 0.9em;
+}
+fieldset {
+	border-style: solid;
+	border-width: 1px;
+	display: inline;
+	vertical-align: bottom;
+}
+button {vertical-align: middle;}
+input {vertical-align: bottom;}
+a {color: inherit;}
+span {max-width: 60vw;display:inline-block;}
+details {
+	background: white;
+	border: 1px solid black;
+	color: black;
+	display: inline-block;
+	min-width: 300px;
+	position: fixed;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+	bottom: 10px;
+	right: 10px;
+}
+table {
+	width: 100%;
+}
+		</style>
+	</head>
+	<body>
+		<!-- <header noclick> -->
+		<!-- 	<label>max delay: <input oninput="changedelay" type="range"><span output>10 sec</span></label> -->
+		<!-- 	<label>stimulus: <select name="stimulus" oninput="changeinput"> -->
+		<!-- 			<option value="both" selected>light &amp; sound</option> -->
+		<!-- 			<option value="light">light</option> -->
+		<!-- 			<option value="sound">sound</option> -->
+		<!-- 	</select></label> -->
+		<!-- </header> -->
+		<div>
+			<span id="top">reaction timer</span>
+			<h2 id="instructions">click or tap to start</h2>
+			<span id="bottom">after a random amount of time, the screen will flash or a tone will sound and the website will time it takes you to press the space bar or click the screen</span>
+		</div>
+		<details noclick>
+			<summary>view results</summary>
+			<hr>
+			<table>(no results yet)</table>
+		</details>
+		<footer noclick>(c) 2023 <a href="https://cole.ws">cole wilson</a></footer>
+		<script src="./script.js"></script>
+	</body>
+</html>

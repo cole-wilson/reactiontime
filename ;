@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Reaction Timer</title>
+		<style>
+* {user-select: none;}
+body {
+	position: fixed;
+	top: 0;
+	background: black;
+	color: white;
+	font-family: monospace;
+	margin: 0px;
+	cursor: pointer;
+	width: 100vw;
+	height: 100vh;
+
+}
+header {
+	cursor: revert;
+	background: white;
+	color: black;
+	padding: 10px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+div {
+	width: 100vw;
+	display: block;
+	text-align: center;
+	margin-top: 45vh;
+}
+h2 {font-size: 3em;margin:0}
+footer {
+	text-align: center;
+	color: white;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	font-size: 0.9em;
+}
+fieldset {
+	border-style: solid;
+	border-width: 1px;
+	display: inline;
+	vertical-align: bottom;
+}
+button {vertical-align: middle;}
+input {vertical-align: bottom;}
+a {color: inherit;}
+		</style>
+	</head>
+	<body>
+		<!-- <header> -->
+		<!-- 	<fieldset> -->
+		<!-- 		<legend>sound</legend> -->
+		<!-- 		<label><input type='radio' name='sound'>ding</label> -->
+		<!-- 		<label><input type='radio' name='sound'>buzzer</label> -->
+		<!-- 		<label><input type='radio' name='sound'>custom</label> -->
+		<!-- 	</fieldset> -->
+		<!-- 	<button>clear</button> -->
+		<!-- </header> -->
+		<div>
+			<span id="top">top</span>
+			<h2 id="instructions">click or tap to start</h2>
+			<span id="bottom">bottom</span>
+		</div>
+		<footer>(c) 2023 <a href="//cole.ws">cole wilson</a></footer>
+		<script src="./script.js"></script>
+	</body>
+</html>
