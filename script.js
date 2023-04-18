@@ -40,6 +40,10 @@ function interaction(e) {
 		return
 	if (e.target.closest('[noclick]') !== null)
 		return
+	if (last == -9) {
+		window.onkeydown = interaction
+		last = -1
+	}
 	let now = performance.now()
 	if (last == -1) {
 		document.body.style.background = "black"
@@ -81,5 +85,4 @@ function interaction(e) {
 
 window.onload = () => {
 	window.onclick = interaction
-	window.onkeydown = interaction
 }
